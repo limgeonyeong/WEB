@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>grid practicing</title>
+    <style>
+      h1{
+        border-bottom: 1px solid black;
+        text-align: center;
+        margin:0;
+        height: 60px;
+      }
+      ul{
+        border-right: 1px solid black;
+          margin:0;
+          width:60px;
+      }
+      body{
+        margin:0;
+      }
+      #grid{
+        display:grid;
+        grid-template-columns: 150px 1fr;
+      }
+      #grid ul{
+        padding:20px;
+        padding-left:40px;
+        padding-right:10px;
+    </style>
+  </head>
+  <body>
+    <h1>WEB</h1>
+    <div id="grid">
+    <ul>
+      <li>1</li>
+      <li>2</li>
+      <li>3</li>
+    </ul>
+    <div id="article">
+        <h2>css practicing</h2>
+        <p>
+          We need to practice what we've learned in last class.
+        </p>
+    </div>
+    </div>
+  </body>
+</html>
