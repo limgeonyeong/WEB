@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Object</title>
+  </head>
+  <body>
+    <h1>Object</h1>
+    <p>
+      Array와 유사
+      <br>차이점: 순서 상관x(array는 순서대로 보관됨), 대괄호 대신 중괄호 사용
+    </p>
+    <h2>create</h2>
+    <script>
+      var number = {
+        "first":"one",
+        "second":"two"
+      };
+      document.write("first : "+number.first+"<br>");  //number.first에서 .은 object access operator이다.
+      document.write("second : "+number.second+"<br>");
+      number.third = "three";
+      document.write("third :"+number.third+"<br>");
+      number["fourth number"] = "four";
+      document.write("fourth number : "+number["fourth number"]+"<br>");
+    </script>
+    <h2>iterate</h2>
+    <script>
+      for(var key in number) {
+        document.write(key+"<br>");
+      }
+
+      for(var key in number) {
+        document.write(number[key]+"<br>");
+      }
+
+      for(var key in number) {
+        document.write(key+" : "+number[key]+"<br>");
+      }
+    </script>
+
+    <h2>Property & Method</h2>
+
+    <p>
+      method: 객체에 소속된 함수 <br>
+      property: 객체에 소속된 변수
+    </p>
+
+    <script>
+      //아래는 함수 지정의 새로운 방법이다.
+      number.showAll = function(){
+        for(var key in this) {
+          document.write(key+" : "+this[key]+"<br>");
+        }
+      }
+
+
+    </script>
+
+
+
+
+
+<br>
+<br>
+
+
+
+
+
+
+
+
+<br>
+
+
+
+
+    <script>
+      var family = {
+        "father" : "Lim",
+        'mother' : "Kim"
+      };
+      document.write("father : "+family.father+"<br>");
+      document.write("mother : "+family.mother+"<br>");
+      family["the son"]="me";
+      document.write("son : "+family["the son"]+"<br>");
+      for(var key in family){
+        document.write(family[key]+"<br>");
+      }
+    </script>
+  </body>
+</html>

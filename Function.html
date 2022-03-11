@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>Function</h1>
+    <h2>Basic</h2>
+    <ul>
+      <script>
+        function two(){
+          document.write('<li>2-1</li>')
+          document.write('<li>2-2</li>')
+        }
+        document.write('<li>1</li>')
+        two();
+        document.write('<li>3</li>')
+        two();
+      </script>
+    </ul>
+    <h2>Parameter & Argument</h2>
+    <p>
+      parameter = 매개변수<br>
+      argument = 인자<br>
+      함수의 입력
+    </p>
+    <script>
+      function onePlusOne(){
+        document.write(1+1+'<br>');
+      }
+      onePlusOne();
+
+      function sum(left, right){
+        document.write(left+right+'<br>');
+      }
+      function sumColorRed(left, right){
+        document.write('<div style = "color:red">'+(left+right)+'</div><br>');
+      }
+      sum(2, 3);
+      sum(3,4);
+      sumColorRed(2,3);
+    </script>
+    <h2>Return</h2>
+    <p>
+      함수의 출력
+      <br>표현식: 1+1=2 에서 1+1 과 같은 것
+    </p>
+    <script>
+      function sum2(left, right){
+        return left+right;
+      }
+      document.write(sum2(2,3)+'<br>');
+      document.write('<div style = "color: red">'+sum2(2,3)+'</div>');
+      document.write('<div style = "font-size: 3rem">'+sum2(2,3)+'</div>');
+    </script>
+  </body>
+</html>
